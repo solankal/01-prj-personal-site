@@ -2,10 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal portfolio website about my interests and future web development projects.">
+  <title>My Personal Site | Web Development Student</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <header class="site-header">
+    <a class="logo" href="#top">My Corner</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#soccer">Soccer</a>
+      <a href="#music">Music</a>
+      <a href="#favorites">Favorites</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Web development student</p>
+        <h1>Building my future, one project at a time.</h1>
+        <p class="hero-text">Welcome to my personal website. This is where I will share my class projects, interests, and the things that make me who I am.</p>
+        <a class="button" href="#about">Get to know me</a>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-image">
+        <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=student&amp;skinColor=6c2e1f&amp;accessories=prescription02" alt="A personal avatar with dark skin and glasses">
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">A little about me</p>
+        <h2>Hello, I am glad you are here.</h2>
+        <p>I was born in Nigeria, and my birthday is July 1, 2005. I am 6 ft 3 in tall and I am learning how to create websites in my web development college course.</p>
+        <p>When I am not learning or working on a project, I love brownies and rice and chicken.</p>
+      </div>
+    </section>
+
+    <section class="section" id="soccer">
+      <p class="eyebrow">My favorite sport</p>
+      <h2>Soccer keeps me moving.</h2>
+      <p class="section-intro">I enjoy the teamwork, energy, and creativity that make soccer exciting to watch and play.</p>
+      <div class="soccer-highlight">
+        <span class="large-icon" aria-hidden="true">⚽</span>
+        <div>
+          <h3>Teamwork is everything</h3>
+          <p>Soccer is a reminder that great results come from people working together toward the same goal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section colored-section" id="music">
+      <p class="eyebrow">My soundtrack</p>
+      <h2>Music that brings good energy.</h2>
+      <div class="music-list">
+        <article class="music-item">
+          <span class="music-number">01</span>
+          <div>
+            <h3>Latin music</h3>
+            <p>Bright rhythms and music that make it easy to feel the moment.</p>
+          </div>
+        </article>
+        <article class="music-item">
+          <span class="music-number">02</span>
+          <div>
+            <h3>Soul music</h3>
+            <p>The Jackson 5 and classic soul are always welcome on my playlist.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="favorites">
+      <p class="eyebrow">Favorite things</p>
+      <h2>Two favorites I can always talk about.</h2>
+      <div class="favorite-list">
+        <article class="favorite-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Lightmatter_panda.jpg" alt="A giant panda sitting in a tree">
+          <div class="card-content">
+            <p class="card-label">Favorite animal</p>
+            <h3>Panda</h3>
+            <p>Pandas are my favorite animal because they are calm, unique, and completely adorable.</p>
+          </div>
+        </article>
+        <article class="favorite-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Deadpool_thinking.jpg" alt="Deadpool character representing the Marvel comic">
+          <div class="card-content">
+            <p class="card-label">Favorite Marvel comic</p>
+            <h3>Deadpool</h3>
+            <p>Deadpool is my favorite Marvel character because of his humor, action, and unpredictable personality.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <p class="eyebrow">Coming soon</p>
+      <h2>My course projects</h2>
+      <p class="section-intro">This space will grow as I learn more HTML, CSS, and web development. Check back soon to see what I create.</p>
+      <a class="text-link" href="mailto:hello@example.com">Say hello <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by me while learning web development.</p>
+  </footer>
 </body>
 </html>

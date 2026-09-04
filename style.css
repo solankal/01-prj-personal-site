@@ -1,1 +1,322 @@
-/* Add you CSS here */
+/* Basic page styles */
+:root {
+	--ink: #17221f;
+	--muted: #5c6b66;
+	--cream: #f7f4ed;
+	--paper: #fffdf8;
+	--green: #174c46;
+	--mint: #d7ebe1;
+	--coral: #e86f51;
+	--line: #d8e0da;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	color: var(--ink);
+	background: var(--cream);
+	font-family: Georgia, 'Times New Roman', serif;
+	line-height: 1.6;
+}
+
+.site-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 22px 7%;
+	background: var(--paper);
+}
+
+.logo,
+nav a,
+.button,
+.text-link {
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.logo {
+	color: var(--green);
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav a {
+	margin-left: 24px;
+	color: var(--muted);
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+
+nav a:hover,
+.text-link:hover {
+	color: var(--coral);
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	min-height: 560px;
+	padding: 80px 7%;
+	background: linear-gradient(90deg, rgba(23, 76, 70, 0.96), rgba(23, 76, 70, 0.72)), url('img/hero-bg.jpg') center/cover;
+}
+
+.hero-content {
+	max-width: 640px;
+	color: white;
+}
+
+.eyebrow,
+.card-label {
+	margin: 0 0 12px;
+	color: var(--coral);
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	font-size: 0.75rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.hero .eyebrow {
+	color: #f7c2a9;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-top: 0;
+}
+
+h1,
+h2 {
+	line-height: 1.1;
+}
+
+h1 {
+	max-width: 600px;
+	margin-bottom: 24px;
+	font-size: clamp(2.8rem, 7vw, 5.8rem);
+	font-weight: normal;
+}
+
+h2 {
+	margin-bottom: 22px;
+	color: var(--green);
+	font-size: clamp(2rem, 4vw, 3.4rem);
+	font-weight: normal;
+}
+
+h3 {
+	margin-bottom: 8px;
+	font-size: 1.35rem;
+}
+
+.hero-text,
+.section-intro {
+	max-width: 600px;
+	color: var(--muted);
+	font-size: 1.1rem;
+}
+
+.hero-text {
+	color: #f1eee5;
+}
+
+.button {
+	display: inline-block;
+	margin-top: 18px;
+	padding: 13px 21px;
+	color: white;
+	background: var(--coral);
+	font-size: 0.9rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.button:hover {
+	background: #c9563b;
+}
+
+.section {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 100px 7%;
+}
+
+.about-section {
+	display: flex;
+	align-items: center;
+	gap: 70px;
+}
+
+.about-image,
+.about-content {
+	flex: 1;
+}
+
+.about-image img {
+	display: block;
+	width: 100%;
+	max-width: 380px;
+	margin: auto;
+	border-radius: 50%;
+}
+
+.soccer-highlight {
+	display: flex;
+	align-items: center;
+	max-width: 700px;
+	margin-top: 40px;
+	padding: 28px;
+	border-left: 5px solid var(--coral);
+	background: var(--paper);
+}
+
+.soccer-highlight p,
+.music-item p,
+.favorite-card p {
+	margin-bottom: 0;
+	color: var(--muted);
+}
+
+.large-icon {
+	margin-right: 24px;
+	font-size: 3.5rem;
+}
+
+.colored-section {
+	max-width: none;
+	padding-right: 14%;
+	padding-left: 14%;
+	background: var(--mint);
+}
+
+.music-list {
+	display: flex;
+	gap: 24px;
+	margin-top: 40px;
+}
+
+.music-item {
+	flex: 1;
+	padding: 25px 0;
+	border-top: 1px solid var(--green);
+}
+
+.music-number {
+	display: block;
+	margin-bottom: 16px;
+	color: var(--coral);
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	font-weight: bold;
+}
+
+.favorite-list {
+	display: flex;
+	gap: 28px;
+	margin-top: 40px;
+}
+
+.favorite-card {
+	flex: 1;
+	overflow: hidden;
+	background: var(--paper);
+	border: 1px solid var(--line);
+}
+
+.favorite-card img {
+	display: block;
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+}
+
+.card-content {
+	padding: 25px;
+}
+
+.card-label {
+	margin-bottom: 8px;
+}
+
+.projects-section {
+	border-top: 1px solid var(--line);
+}
+
+.text-link {
+	display: inline-block;
+	margin-top: 15px;
+	color: var(--green);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.text-link span {
+	margin-left: 7px;
+	color: var(--coral);
+	font-size: 1.2rem;
+}
+
+footer {
+	padding: 28px 7%;
+	color: #dbe9e1;
+	background: var(--green);
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	font-size: 0.85rem;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+@media (max-width: 700px) {
+	.site-header {
+		display: block;
+		text-align: center;
+	}
+
+	nav {
+		margin-top: 14px;
+	}
+
+	nav a {
+		display: inline-block;
+		margin: 5px 8px;
+	}
+
+	.hero {
+		min-height: 520px;
+	}
+
+	.section,
+	.colored-section {
+		padding: 70px 7%;
+	}
+
+	.about-section,
+	.music-list,
+	.favorite-list {
+		display: block;
+	}
+
+	.about-image {
+		margin-bottom: 40px;
+	}
+
+	.music-item {
+		margin-top: 25px;
+	}
+
+	.favorite-card + .favorite-card {
+		margin-top: 28px;
+	}
+}
